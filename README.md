@@ -1,6 +1,6 @@
 # banner-cli
 [![npm version](https://badge.fury.io/js/%40borracciablu%2Fbanner-cli.svg)](https://badge.fury.io/js/%40borracciablu%2Fbanner-cli)
-[![Coverage Status](https://coveralls.io/repos/github/borracciaBlu/banner-cli/badge.svg?branch=master)](https://coveralls.io/github/borracciaBlu/banner-cli?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/borracciaBlu/banner-cli/badge.svg?branch=main)](https://coveralls.io/github/borracciaBlu/banner-cli?branch=main)
 [![Build Status](https://github.com/borracciaBlu/banner-cli/workflows/build-test/badge.svg)](https://github.com/borracciaBlu/banner-cli/actions?query=workflow%3Abuild-test)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
@@ -8,6 +8,8 @@ CLI tool to add a banner comment to your files.
 
 By default it will use the values in `package.json`. 
 All values are overridable.
+
+This package is highly inspired by [banner-cli](https://www.npmjs.com/package/banner-cli) and i would currently consider it as a superset.
 
 ```
 
@@ -77,6 +79,9 @@ $ banner-cli 'dist/**/*.js'
 # add banner to each css file
 # override author, license, site
 $ banner-cli 'dist/**/*.css' --author 'Mr Developer' --license MIT --site https://project.js.org
+
+# use template 
+$ banner-cli 'dist/**/*.css' --template '/*! v[tag] :: [time] */'
 ```
 
 **Advanced:**
