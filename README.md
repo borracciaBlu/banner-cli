@@ -85,9 +85,9 @@ $ banner-cli 'dist/**/*.css' --author 'Mr Developer' --license MIT --site https:
 // in package.json 
 // inject next tag 
 {
-	"scripts" : {
-	    "banner:patch": "NEXT_TAG=$(semver $npm_package_version -i patch) banner-cli 'dist/*.js' --template='/*! v[tag] :: [time] */' --tag=$NEXT_TAG"
-	}
+    "scripts" : {
+        "banner:patch": "NEXT_TAG=$(semver $npm_package_version -i patch) banner-cli 'dist/*.js' --template='/*! v[tag] :: [time] */' --tag=$NEXT_TAG"
+    }
 }
 
 ```
