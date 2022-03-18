@@ -1,0 +1,56 @@
+{
+  "name": "@borracciablu/banner-cli",
+  "version": "0.0.0",
+  "description": "CLI tool to add a banner comment to your files.",
+  "bin": "index.js",
+  "scripts": {
+    "lint": "eslint index.js lib/banner.js",
+    "x--------------------TEST------------------------x": "Code coverage and saucelab",
+    "test": "nyc --reporter=html --reporter=text mocha test.js",
+    "coveralls": "nyc npm test && nyc report --reporter=lcov"
+  },
+  "engines": {
+    "node": ">= 12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borracciaBlu/banner-cli.git"
+  },
+  "files": [
+    "banner.js",
+    "index.js",
+    "lib"
+  ],
+  "keywords": [
+    "author",
+    "automation",
+    "banner",
+    "bundle",
+    "bundles",
+    "comment",
+    "comments",
+    "contributing",
+    "generate",
+    "generator",
+    "license",
+    "package.json",
+    "version",
+    "versions"
+  ],
+  "author": "Marco Buttini",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/borracciaBlu/banner-cli/issues"
+  },
+  "homepage": "https://github.com/borracciaBlu/banner-cli#readme",
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "eslint": "^8.11.0",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "commander": "^9.0.0",
+    "prepend-file": "^2.0.1"
+  }
+}
