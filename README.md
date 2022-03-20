@@ -31,7 +31,7 @@ This package is highly inspired by [banner-cli](https://www.npmjs.com/package/ba
 
 ## API Reference
 
-```js
+```
 Usage: banner-cli [options] [source]
 
 CLI tool to add a banner comment to your files.
