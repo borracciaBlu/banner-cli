@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 'use strict';
 
-const { program } = require('commander');
+const {program} = require('commander');
 const pkg = require('./package.json');
 const {banner} = require('./lib/banner');
+const {getLogger} = require('./lib/logger');
 
 program
     .name('banner-cli')
@@ -21,7 +22,8 @@ program
     .option('-y, --year <year>', 'override year')
     .option('--template <template>', 'override template')
     .option('-l, --license <license>', 'override license')
-    .option('-d, --debug', 'debug options and args');
+    .option('-d, --debug', 'debug options and args')
+    .option('--dry-run', 'test the command, simulate without actually doing it');
 
 program.addHelpText('after', `
 Examples:
@@ -36,19 +38,11 @@ program.parse();
 
 const args = program.args;
 const options = program.opts();
+const logger = getLogger();
 
 
 if (options.debug) {
-    console.log('Debug');
-    console.log('\n');
-
-    console.log('Args:');
-    console.log(args);
-    console.log('\n');
-
-    console.log('Options:');
-    console.log(options);
-
+    logger.debug(args, options);
     process.exit(0);
 }
 
@@ -57,5 +51,5 @@ if (args.length === 0) {
     process.exit(0);
 }
 
-banner(args, options);
+banner(args, options, logger);
 process.exit(0);

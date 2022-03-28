@@ -1,8 +1,28 @@
 'use strict';
+var mocha = require('mocha');
+var describe = mocha.describe;
+var it = mocha.it;
 var assert = require('assert');
 var temporaryFile = '.temp1';
 var fs = require('fs');
 
+var loggerStub = ({
+    debug: function(args, options) {
+        //
+    },
+    completeBanner: function() {
+        //
+    },
+    addBanner: function(bannerText) {
+        //
+    },
+    addPath: function(path) {
+        //
+    },
+    addFile: function(file) {
+        //
+    },
+});
 
 describe('lib banner', function tests() {
     var {
@@ -109,8 +129,8 @@ describe('lib banner', function tests() {
 
     describe('getBanner', function() {
         it('should handle null case', function () {
-            var banner = getBanner('', {name: ''});
-            assert.equal(banner, '');
+            var bannerText = getBanner('', {name: ''});
+            assert.equal(bannerText, '');
         });
 
         it('should handle default case', function () {
@@ -169,15 +189,15 @@ describe('lib banner', function tests() {
                 year: '2022'
             };
 
-            var banner = getBanner(template, options);
-            assert.equal(banner, expected);
+            var bannerText = getBanner(template, options);
+            assert.equal(bannerText, expected);
         });
     });
 
     describe('banner', function() {
         it('should handle null case', function () {
             assert.throws(banner, Error, 'File not found');
-            assert.throws(() => banner({}), Error, 'File not found');
+            assert.throws(() => banner([], {}, loggerStub), Error, 'File not found');
         });
 
         it('should add banner', async function() {
@@ -194,7 +214,7 @@ describe('lib banner', function tests() {
                 template: '/*! test [year] */',
             };
 
-            banner(args, options);
+            banner(args, options, loggerStub);
             assert.equal(fs.readFileSync(temporaryFile, 'utf8'), '/*! test 2022 */');
             fs.unlinkSync(temporaryFile);
         });
