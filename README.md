@@ -49,6 +49,7 @@ Options:
   --template <template>    override template
   -l, --license <license>  override license
   -d, --debug              debug options and args
+  --dry-run                test the command, simulate without actually doing it
   -h, --help               display help for command
 ```
 
