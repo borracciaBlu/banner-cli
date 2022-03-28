@@ -4,7 +4,7 @@
   "description": "CLI tool to add a banner comment to your files.",
   "bin": "index.js",
   "scripts": {
-    "lint": "eslint index.js lib/banner.js",
+    "lint": "eslint index.js test.js lib/*.js",
     "x--------------------TEST------------------------x": "Code coverage and saucelab",
     "test": "nyc --reporter=html --reporter=text mocha test.js",
     "coveralls": "nyc npm test && nyc report --reporter=lcov"
@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "commander": "^9.0.0",
+    "npmlog": "^6.0.1",
     "prepend-file": "^2.0.1"
   }
 }
