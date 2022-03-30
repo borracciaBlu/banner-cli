@@ -22,11 +22,9 @@
     "lib"
   ],
   "keywords": [
-    "author",
     "automation",
     "banner",
-    "bundle",
-    "bundles",
+    "cli",
     "comment",
     "comments",
     "contributing",
