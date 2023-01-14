@@ -1,6 +1,6 @@
 {
   "name": "@borracciablu/banner-cli",
-  "version": "0.1.32",
+  "version": "0.1.33",
   "description": "CLI tool to add a banner comment to your files.",
   "bin": "index.js",
   "scripts": {
