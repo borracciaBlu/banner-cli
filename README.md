@@ -2,13 +2,15 @@
   <a href="https://github.com/borracciaBlu/banner-cli/" target="_blank">
     <img src="https://user-images.githubusercontent.com/2061731/233875381-457b1456-a1d9-4295-8713-d0a61c7d987e.svg" width="167px" height="38px" alt="banner-cli" />
   </a>
+
+  <br>
+  <span align="center">
+    CLI tool to add a comment banner to your files.
+  </span>
 </p>
 
 
 
-<p align="center">
-  CLI tool to add a banner comment to your files.
-</p>
 
 <p dir="auto"  align="center">
     <a href="https://badge.fury.io/js/%40borracciablu%2Fbanner-cli"><img src="https://badge.fury.io/js/%40borracciablu%2Fbanner-cli.svg" alt="npm version"></a>
