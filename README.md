@@ -1,15 +1,22 @@
-# banner-cli
-[![npm version](https://badge.fury.io/js/%40borracciablu%2Fbanner-cli.svg)](https://badge.fury.io/js/%40borracciablu%2Fbanner-cli)
-[![Coverage Status](https://coveralls.io/repos/github/borracciaBlu/banner-cli/badge.svg?branch=main)](https://coveralls.io/github/borracciaBlu/banner-cli?branch=main)
-[![Build Status](https://github.com/borracciaBlu/banner-cli/workflows/build-test/badge.svg)](https://github.com/borracciaBlu/banner-cli/actions?query=workflow%3Abuild-test)
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+<p align="center">
+  <a href="https://github.com/borracciaBlu/banner-cli/" target="_blank">
+    <img src="https://user-images.githubusercontent.com/2061731/233875381-457b1456-a1d9-4295-8713-d0a61c7d987e.svg" width="167px" height="38px" alt="banner-cli" />
+  </a>
+</p>
 
-CLI tool to add a banner comment to your files.
 
-By default it will use the values in `package.json`. 
-All values are overridable.
 
-This package is highly inspired by [banner-cli](https://www.npmjs.com/package/banner-cli) and i would currently consider it as a superset.
+<p align="center">
+  CLI tool to add a banner comment to your files.
+</p>
+
+<p dir="auto"  align="center">
+    <a href="https://badge.fury.io/js/%40borracciablu%2Fbanner-cli"><img src="https://badge.fury.io/js/%40borracciablu%2Fbanner-cli.svg" alt="npm version"></a>
+    <a href="https://coveralls.io/github/borracciaBlu/banner-cli?branch=main"><img src="https://coveralls.io/repos/github/borracciaBlu/banner-cli/badge.svg?branch=main" alt="Coverage Status"></a>
+    <a href="https://github.com/borracciaBlu/banner-cli/actions?query=workflow%3Abuild-test"><img src="https://github.com/borracciaBlu/banner-cli/workflows/build-test/badge.svg" alt="Build Status"></a>
+    <a href="https://github.com/borracciaBlu/banner-cli/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" alt="License"></a>
+</p>
+
 
 ```
 
@@ -23,6 +30,11 @@ This package is highly inspired by [banner-cli](https://www.npmjs.com/package/ba
 
 
 ```
+
+By default it will use the values in `package.json`.  
+All values are overridable.  
+
+If you are evaluating the use of banners please read [Versioning, banners and why you may consider using it](https://adropincalm.com/blog/versioning-and-banners/).
 
 ## Installing
 
@@ -97,3 +109,6 @@ $ banner-cli 'dist/**/*.css' --template '/*! v[tag] :: [time] */'
 }
 
 ```
+
+## Notes 
+This package is highly inspired by [banner-cli](https://www.npmjs.com/package/banner-cli) and is currently a superset.
