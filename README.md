@@ -36,7 +36,8 @@
 By default it will use the values in `package.json`.  
 All values are overridable.  
 
-If you are evaluating the use of banners please read [Versioning, banners and why you may consider using it](https://adropincalm.com/blog/versioning-and-banners/).
+If you are evaluating the use of banners please read:
+- [Versioning, banners and why you may consider using it](https://adropincalm.com/blog/versioning-and-banners/)
 
 ## Installing
 
