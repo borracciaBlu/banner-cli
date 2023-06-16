@@ -48,7 +48,7 @@
     "nyc": "^15.1.0"
   },
   "dependencies": {
-    "commander": "^10.0.0",
+    "commander": "^11.0.0",
     "npmlog": "^7.0.0",
     "prepend-file": "^2.0.1"
   }
