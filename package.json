@@ -10,7 +10,7 @@
     "coveralls": "nyc npm test && nyc report --reporter=lcov"
   },
   "engines": {
-    "node": ">= 12"
+    "node": ">= 16"
   },
   "repository": {
     "type": "git",
