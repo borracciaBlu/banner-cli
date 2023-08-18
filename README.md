@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/borracciaBlu/banner-cli/" target="_blank">
-    <img src="https://user-images.githubusercontent.com/2061731/233875381-457b1456-a1d9-4295-8713-d0a61c7d987e.svg" width="167px" height="38px" alt="banner-cli" />
+    <img src="https://github.com/borracciaBlu/banner-cli/assets/2061731/fafb01f3-aec4-45d8-b316-73b9294c3aeb" width="114px" height="55px" alt="banner-cli" />
   </a>
 
   <br>
