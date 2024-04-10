@@ -43,7 +43,7 @@
   "homepage": "https://github.com/borracciaBlu/banner-cli#readme",
   "devDependencies": {
     "assert": "^2.0.0",
-    "eslint": "^8.11.0",
+    "eslint": "^9.0.0",
     "mocha": "^10.0.0",
     "nyc": "^15.1.0"
   },
