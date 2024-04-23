@@ -2,7 +2,9 @@
   "name": "@borracciablu/banner-cli",
   "version": "1.0.21",
   "description": "CLI tool to add a banner comment to your files.",
-  "bin": "index.js",
+  "bin": {
+    "banner-cli": "index.js"
+  },
   "scripts": {
     "lint": "eslint index.js test.js lib/*.js",
     "x--------------------TEST------------------------x": "Code coverage and saucelab",
