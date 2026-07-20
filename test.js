@@ -1,8 +1,9 @@
 'use strict';
-var mocha = require('mocha');
-var describe = mocha.describe;
-var it = mocha.it;
-var assert = require('assert');
+
+var { describe, it } = require('node:test');
+var assert = require('node:assert');
+
+
 var temporaryFile = '.temp1';
 var fs = require('fs');
 
